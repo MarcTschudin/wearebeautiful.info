@@ -35,9 +35,9 @@ following keys:
     "age":            34,
     "body_type":      "thin",
     "body_part":      "bust",
-    "pose":           "normal",
+    "pose":           "lying",
     "mother":         "vaginal",
-    "ethnicity":      "of carribean descent",
+    "ethnicity":      "of Carribean descent",
     "tags":           ["#post-pregnancy"],
     "modification":   ["pregnancy", "breastfed"],
     "comment":        "Model was breastfeeding at the time.",       
@@ -91,7 +91,7 @@ ethnicity
 ---------
 
 This is a free form text field that the model should self declare. There is no existing taxonomy that handles
-this well on a glabal scale. 
+this well on a global scale. 
 
 
 body_type
@@ -174,17 +174,16 @@ Is the model a mother? If so, how was/were the child/children delivered?
 modification
 ------------
 
-Indicates modifciation of the model. One of more of the following may be allowed:
+Indicates modification of the model. One of more of the following may be allowed:
 
 | Allowable values |
 | --------- |
-| female |
 | pregnancy |
 | nursed |
 | circumcised |
-| augmentated |
+| augmented |
 | episiotomy |
-| masectomy  |
+| mastectomy  |
 | labiaplasty |
 | female-to-male |
 | male-to-female |
@@ -196,9 +195,16 @@ tags
 
 An array of tags (without hashes) that may also apply to this model.
 
-"#large-hips #hip-scar" would be expressed in JSON as:
+"#small-areola #piercing" would be expressed in JSON as:
 
- `["large-hips", "hip-scar"]`  
+ `["<size>-<body_sub_part>", "<description>"]`  
+
+| tag or tag-building blocks| common values  |
+|---------------------------|----------------|
+| size:                     | small, large   |
+| body_sub_part:            | -inner-labia, -penis, -brests, -areola, -scrotum, -buttocks, -clitoris |
+| descriptions:             | asymetric-labia, asymetric-breast, bent-penis, inverted-nipple, piercing, bodymodification (decorative cutting, branding, scarring), |
+
 
 
 comment
