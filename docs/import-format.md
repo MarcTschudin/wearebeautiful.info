@@ -18,7 +18,7 @@ all .STL/.OBJ files must be without errors!
 * screenshot.jpg               - A screenshot of the model as shown on the site, suitable for previewing the model
                                
 
-File contents for upload with sevolop.sh
+File contents for upload with "Upload raw bundle" processed on a virtual machine
 -------------
 
 In order to import an model files into the site, the file needs to be in a ZIP compressed file containing:
@@ -224,7 +224,7 @@ An array of tags (without hashes) that may also apply to this model.
 
 | Allowable values for descriptions|
 | --------- |
-| asymetric-labia, asymetric-breast, bent-penis, inverted-nipple, piercing, bodymodification (decorative cutting, branding, scarring), |
+| asymetric-labia, asymetric-breast, bent-penis, inverted-nipple, piercing, bodymodification (decorative cutting, branding, scarring), anatomical-model|
 
 
 
