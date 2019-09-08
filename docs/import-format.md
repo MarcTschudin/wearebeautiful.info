@@ -3,10 +3,12 @@ Model import format specification
 
 Format version: 1
 
-File contents
+File contents for upload with makebundle.sh
 -------------
 
 In order to import an model files into the site, the file needs to be in a ZIP compressed file containing:
+
+all .STL/.OBJ files must be without errors!
 
 * manifest.json                - A JSON document that defines the metadata for the model. See below
 * solid.stl                    - print solid in resolution suited for printing.
@@ -15,6 +17,19 @@ In order to import an model files into the site, the file needs to be in a ZIP c
 * surface-low.stl              - A surface in correct orientation, viewable on a mobile phone or tablet.
 * screenshot.jpg               - A screenshot of the model as shown on the site, suitable for previewing the model
                                
+
+File contents for upload with sevolop.sh
+-------------
+
+In order to import an model files into the site, the file needs to be in a ZIP compressed file containing:
+
+all .STL/.OBJ files must be without errors!
+
+* manifest.json                - A JSON document that defines the metadata for the model. See below
+* solid.stl                    - print solid in resolution suited for printing.
+* surface-orig.stl             - original resolution surface, for archival purposes.
+* screenshot.jpg               - A screenshot of the model as shown on the site, suitable for previewing the model
+
 
 
 manifest.json
@@ -35,6 +50,8 @@ following keys:
     "age":            34,
     "body_type":      "thin",
     "body_part":      "bust",
+    "arrangement":  	"spread",
+    "excited":  	    "not excited",
     "pose":           "lying",
     "mother":         "vaginal",
     "ethnicity":      "of Carribean descent",
@@ -129,7 +146,7 @@ Allowable values and their short cut codes:
 
 | short|full text |
 |------|---------|
-| N    |not-excited |
+| N    |not excited |
 | X    |excited |
 | P    |partially excited |
 
@@ -188,6 +205,7 @@ Indicates modification of the model. One of more of the following may be allowed
 | female-to-male |
 | male-to-female |
 | fgm |
+| orchiectomy | 
 
 
 tags
@@ -199,11 +217,14 @@ An array of tags (without hashes) that may also apply to this model.
 
  `["<size>-<body_sub_part>", "<description>"]`  
 
-| tag or tag-building blocks| common values  |
+| tag-building blocks| common values  |
 |---------------------------|----------------|
-| size:                     | small, large   |
-| body_sub_part:            | -inner-labia, -penis, -brests, -areola, -scrotum, -buttocks, -clitoris |
-| descriptions:             | asymetric-labia, asymetric-breast, bent-penis, inverted-nipple, piercing, bodymodification (decorative cutting, branding, scarring), |
+| size:                     | small, large,    |
+| body_sub_part:            | inner-labia, penis, brests, areola, scrotum, buttocks, clitoris |
+
+| Allowable values for descriptions|
+| --------- |
+| asymetric-labia, asymetric-breast, bent-penis, inverted-nipple, piercing, bodymodification (decorative cutting, branding, scarring), |
 
 
 
